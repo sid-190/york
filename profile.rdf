@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns:oo="http://purl.org/openorg/"
+         xmlns:foaf="http://xmlns.com/foaf/0.1/"
+         xmlns:org="http://www.w3.org/ns/org#"
+         xmlns:skos="http://www.w3.org/2004/02/skos/core#"
+         xmlns:vcard="http://www.w3.org/2006/vcard/ns#"
+         xmlns:owl="http://www.w3.org/2002/07/owl#"
+         xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+         xmlns:dcat="http://www.w3.org/ns/dcat#"
+         xmlns:dc="http://purl.org/dc/terms/"
+         xmlns:sy="http://web.resource.org/rss/1.0/modules/syndication/">
+
+  <oo:OrganizationProfileDocument rdf:nodeID="genid1">
+    <foaf:primaryTopic rdf:resource="https://www.york.ac.uk/.well-known"/>
+  </oo:OrganizationProfileDocument>
+
+  <org:FormalOrganization rdf:about="https://www.york.ac.uk/.well-known">  
+    <skos:prefLabel>The University of York</skos:prefLabel>
+    <skos:hiddenLabel>York</skos:hiddenLabel>
+    <vcard:sortLabel>York, University of</vcard:sortLabel>
+    <foaf:homepage rdf:resource="https://www.york.ac.uk/"/>
+    <foaf:logo rdf:resource="https://www.york.ac.uk/.well-known/Uni-of-York-black.jpg"/>
+    <owl:sameAs rdf:resource="http://dbpedia.org/resource/University_of_York"/>
+    <owl:sameAs rdf:resource="http://id.learning-provider.data.ac.uk/ukprn/10007167"/>
+    <vcard:tel>
+      <vcard:Voice rdf:about="tel:+44-1904-320-000">
+        <rdf:value>tel:+44-1904-320-000</rdf:value>
+        <rdfs:label>01904 320 000</rdfs:label>
+        </vcard:Voice>
+      </vcard:tel>    
+  </org:FormalOrganization>
+
+  <dcat:Download rdf:about="https://www.york.ac.uk/systems/n8/equipment.rdf">
+    <oo:organization rdf:resource="https://www.york.ac.uk/.well-known"/>
+    <dc:subject rdf:resource="http://purl.org/openorg/theme/equipment"/>
+    <dc:conformsTo rdf:resource="http://equipment.n8research.org.uk/research-equipment.html"/>
+    <dc:conformsTo rdf:resource="http://equipment.data.ac.uk/uniquip.html"/>
+    <dc:license rdf:resource="http://reference.data.gov.uk/id/open-government-licence"/>
+    <sy:updateFrequency rdf:resource="http://purl.org/cld/freq/daily"/>
+    <oo:corrections rdf:resource="mailto:Kelvin.Hai@york.ac.uk"/>
+    <oo:primaryContact rdf:resource="mailto:Kelvin.Hai@york.ac.uk"/>
+    <oo:contact rdf:resource="mailto:Kelvin.Hai@york.ac.uk"/>
+  </dcat:Download>
+
+  <dc:Agent rdf:about="mailto:Kelvin.Hai@york.ac.uk">
+    <foaf:name>Mr Kelvin Hai</foaf:name>
+  </dc:Agent>
+</rdf:RDF>
